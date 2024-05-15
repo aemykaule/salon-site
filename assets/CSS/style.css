@@ -1,0 +1,152 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #000;
+    padding: 1rem;
+}
+
+.container {
+    width: 100%;
+    max-width: 80rem;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    padding: 0 1rem;
+    background-color: #f8f9fa;
+}
+
+header a {
+    text-decoration: none;
+    color: #000;
+}
+
+.logo img {
+    width: 8rem;
+    height: auto;
+}
+
+.menu ul {
+    display: none;
+}
+
+.menu ul li {
+    list-style: none;
+    margin: 10px 0;
+}
+
+.line01,
+.line02,
+.line04 {
+    display: flex;
+    flex-direction: column;
+}
+
+.box-left,
+.box-right {
+    width: 100%;
+    margin-top: 2rem;
+}
+
+.box-left h1 {
+    font-size: calc(1.625rem + 3vw);
+    margin-bottom: 1rem;
+}
+
+.box-right img,
+.box-left img {
+    width: 100%;
+    height: auto;
+}
+
+.box-left p,
+.box-right p {
+    color: rgb(108, 117, 125);
+    margin-top: 1rem;
+}
+
+.box-left button,
+.line06 button {
+    width: 100%;
+    background-color: #69B99D;
+    border: none;
+    border-radius: 1rem;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 2rem;
+    padding: 0.75rem;
+}
+
+.line03 {
+    margin-left: 0;
+}
+
+.line03 h5 span {
+    color: #69B99D;
+}
+
+.line04 .row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.line04 .row .col {
+    margin: 1rem 0;
+}
+
+.line04 .row .col img {
+    display: flex;
+    width: 25%;
+    height: auto;
+}
+
+.line04 .row .col h2,
+.line04 .row .col p {
+    text-align: center;
+}
+
+.line05,
+.line06 {
+    margin: 2rem 0;
+}
+
+.line07 {
+    padding: 1rem;
+    background-color: #f8f8f9;
+}
+
+.line07 p {
+    color: #fff;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        height: auto;
+    }
+
+    .menu ul {
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu ul li {
+        margin: 0.5rem 0;
+    }
+
+    .line04 .row {
+        flex-direction: column;
+    }
+}
